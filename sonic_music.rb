@@ -44,9 +44,9 @@ end
 
 in_thread do
   loop do
-    use_synth :bnoise
+    use_synth :bnoise   # wave noise
     sleep 16
-    if loops > 4
+    if loops > 4    # delayed entry
       play 100, amp: 0.1, attack: 2, release: 2
     end
   end
